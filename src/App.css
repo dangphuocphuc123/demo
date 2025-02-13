@@ -1,0 +1,35 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-container {
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 5px 0;
+  cursor: move;
+}
+
+.task-add-container {
+  border-radius: 10px;
+  border: 1px dashed gray;
+  padding: 2px 10px;
+  margin: 5px 0;
+  cursor: move;
+  text-align: center;
+}
+
+
+.column-container {
+  background-color: rgb(204, 199, 199);
+  border-radius: 15px;
+  width: 300px;
+  min-height: 800px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
