@@ -25,19 +25,16 @@ const Board = () => {
     });
   };
 
-  const getNextId = (tasks) => {
-    const allIds = Object.values(tasks)
-      .filter((column) => Array.isArray(column))
-      .flat()
-      .map((task) => task.id);
-    console.log(allIds);
+  const getNextId = () => {
+    const allIds = Object.values(tasks).flat().map(task => task.id);
+
     const maxId = Math.max(...allIds);
     return maxId + 1;
   };
 
   const addTaskToDo = () => {
     const newTask = {
-      id: getNextId(), // Tạo ID duy nhất dựa trên thời gian
+      id: getNextId(),
       title: `Task#${getNextId()}`,
       text: `Title Test ${getNextId()}`,
     };
